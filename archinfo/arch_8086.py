@@ -28,6 +28,10 @@ class Arch8086(Arch):
         super(Arch8086, self).__init__(endness)
         if self.vex_archinfo:
             self.vex_archinfo['i8086_ignore_seg_mode'] = 0x0
+            self.vex_archinfo['i8086_cs_reg'] = 0x0
+            self.vex_archinfo['i8086_ds_reg'] = 0x0
+            self.vex_archinfo['i8086_es_reg'] = 0x0
+            self.vex_archinfo['i8086_ss_reg'] = 0x0
 
     @property
     def capstone_x86_syntax(self):
