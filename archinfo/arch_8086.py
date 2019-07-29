@@ -27,7 +27,7 @@ class Arch8086(Arch):
             raise ArchError('Arch 8086 must be little endian')
         super(Arch8086, self).__init__(endness)
         if self.vex_archinfo:
-            self.vex_archinfo['ignore_seg_mode'] = 0x0
+            self.vex_archinfo['i8086_ignore_seg_mode'] = 0x0
 
     @property
     def capstone_x86_syntax(self):
