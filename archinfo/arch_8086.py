@@ -107,7 +107,7 @@ class Arch8086(Arch):
     vex_conditional_helpers = True
     syscall_num_offset = 8
     call_pushes_ret = True
-    stack_change = -4
+    stack_change = -2
     memory_endness = Endness.LE
     register_endness = Endness.LE
     sizeof = {'short': 16, 'int': 32, 'long': 32, 'long long': 64}
