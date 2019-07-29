@@ -1,5 +1,5 @@
 import logging
-
+UNINITALIZED_SREG = 0x80000000
 l = logging.getLogger("archinfo.arch_x86")
 
 try:
