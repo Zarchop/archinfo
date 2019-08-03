@@ -11,6 +11,7 @@ if bytes is str:
 # pylint: disable=wildcard-import
 from .arch import *
 from .defines import defines
+from .arch_8086     import Arch8086
 from .arch_amd64    import ArchAMD64
 from .arch_x86      import ArchX86
 from .arch_arm      import ArchARM, ArchARMEL, ArchARMHF, ArchARMCortexM

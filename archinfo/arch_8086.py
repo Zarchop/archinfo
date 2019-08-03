@@ -1,6 +1,6 @@
 import logging
 UNINITALIZED_SREG = 0x80000000
-l = logging.getLogger("archinfo.arch_x86")
+l = logging.getLogger("archinfo.arch_8086")
 
 try:
     import capstone as _capstone
@@ -239,4 +239,4 @@ class Arch8086(Arch):
     ld_linux_name = 'ld-linux.so.2'
     elf_tls = TLSArchInfo(2, 56, [8], [4], [0], 0, 0)
 
-register_arch([r'.*i?\d86|.*x32|.*x86|.*metapc'], 32, Endness.LE, ArchX86)
+register_arch([r'.*i?\d86|.*x32|.*x86|.*metapc'], 32, Endness.LE, Arch8086)
